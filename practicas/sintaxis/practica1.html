@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style type="text/css">
+body{
+   background-color: #293d3d;
+}
+
+div{
+  text-align: center;
+  background-color:#d9d9d9;
+  border:1px solid black;
+  font-family: "Arial", sans-serif;
+  font-weight: lighter;
+  margin:10px;
+}
+
+#titulo{
+  font-size: 20px;
+  padding:60px;
+}
+
+#insideTitulo{
+  padding: 1px;
+  margin: 1px;
+}
+
+#infoTitulo{
+  float: left;
+  width: 400px;
+}
+
+#tablaTrabajos{
+  width: 100%;
+  border:1px solid black;
+  padding: 1px;
+  margin: 0px;
+}
+
+#atributos{
+  text-align: left;
+}
+
+#sintaxis{
+  text-align: left;
+}
+
+</style>
+
+<title>Sintaxis HTML5 y CSS3</title>
+
+</head>
+
+<body>
+<div id="titulo">
+    <h1 id = "insideTitulo">Sintaxis HTML5 y CSS3</h1>
+    <p id= "insideTitulo">
+    	Breve explicación sobre algunas etiquetas en HTML estándar, HTML5 y CSS3.
+    </p>
+</div>
+
+<header style="color:white">Encabezado de muestra, función de ejemplo.</header>
+<!--
+  ----------------------------------------------------------------------------------------------------------------*****
+  Tabla de HTML Estándar -----------------------------------------------------------------------------------------*****
+  ----------------------------------------------------------------------------------------------------------------*****
+-->
+
+<a name="estandar"><div>
+  <table id="tablaTrabajos" cellspacing="10">
+    <tr>
+      <th colspan="5"><div>HTML Estándar</div></th>      
+    </tr>
+    <tr>
+      <th>Elemento</th>
+      <th>Propósito</th>
+      <th>Atributos</th>
+      <th>Sintaxis</th>
+      <th>Ejemplos</th>
+    </tr>
+    <tr>
+      <td id="tags">&lth1&gt&lt/h1&gt</td>
+      <td id="proposito">Se utiliza para crear encabezados en una página,<br>
+          existen 6 niveles diferentes.
+      </td>
+      <td id="atributos">align: left, center, right, justify</td>
+      <td id="sintaxis">&lth1 align="center"&gtEtiqueta H1&lt/h1&gt</td>
+      <td id="ejemplo"><h1 align="center">Etiqueta H1</h1>          
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltp&gt&lt/p&gt</td>
+      <td id="proposito">Permite crear párrafos con texto.</td>
+      <td id="atributos">align: left, center, right, justify</td>
+      <td id="sintaxis">&ltp align="justify"&gtEste párrafo es un ejemplo de un párrafo&lt/p&gt</td>
+      <td id="ejemplo"><p align="justify">Este párrafo es un ejemplo de un párrafo</p></td>
+    </tr>
+    <tr>
+      <td id="tags">&lta&gt&lt/a&gt</td>
+      <td id="proposito">Permite crear un hipervínculo a otra página web o a un documento.</td>
+      <td id="atributos">href: dirección de la página<br>
+          ping: lista de direcciones<br>
+          type: tipo de documento
+      </td>
+      <td id="sintaxis">&lthref="midireccion.html"&gtEste es un hipervínculo&lt/a&gt</td>
+      <td id="ejemplo"><a href="">Este es un hipervínculo</a></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltimg&gt</td>
+      <td id="proposito">Permite cargar imágenes en la página web.</td>
+      <td id="atributos">src: dirección de la imagen<br>
+          alt: nombre alternativo<br>
+          height: alto de la imagen<br>
+          width: ancho de la imagen
+      </td>
+      <td id="sintaxis">&ltimg width="100px" height="100px" src="controller.png"&gt</td>
+      <td id="ejemplo"><img  width="100px" height="100px" src="controller.png"></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltbr&gt</td>
+      <td id="proposito">Genera un salto de linea.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">Linea 1&ltbr&gt<br>
+                        Linea 2&ltbr&gt<br>
+                        Linea 3
+      </td>
+      <td id="ejemplo">Linea 1<br>
+                       Linea 2<br>
+                       Linea 3
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltdiv&gt&lt/div&gt</td>
+      <td id="proposito">Permite crear "cajas" donde se pueden agregar otros elementos html.<br>
+                          Son muy útiles para organizar la página web.</td>
+      <td id="atributos">align: left, center, right, justify<br>
+                          style: border, color..
+      </td>
+      <td id="sintaxis">&ltdiv align="center" style="border:1px solid black">Hello World&lt/div&gt</td>
+      <td id="ejemplo"><div align="center" style="border:1px solid black">Hello World</div></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltul&gt&lt/ul&gt</td>
+      <td id="proposito">Etiqueta para crear listas desordenadas.</td>
+      <td id="atributos">
+              type: disc, square, circle<br>
+              compact: compact
+      </td>
+      <td id="sintaxis" align="left" style="border:1px solid black">&ltul type="circle"&gt<br>                        
+                        &nbsp&nbsp&nbsp&ltli&gtElemento A&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento B&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento C&lt/li&gt<br>
+                        &lt/ul&gt
+
+      </td>
+      <td id="ejemplo"> <ul type="circle">
+                          <li>Elemento A</li>
+                          <li>Elemento B</li>
+                          <li>Elemento C</li>
+                        </ul></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltol&gt&lt/ol&gt</td>
+      <td id="proposito">Etiqueta para crear listas ordenadas.</td>
+      <td id="atributos">
+        reversed: Inicia la lista al revés.
+        start: Indica con que valor iniciar.
+        type: 1, A, a, i, I
+      </td>      
+      <td id="sintaxis" align="left" style="border:1px solid black">&ltol&gt<br>                        
+                        &nbsp&nbsp&nbsp&ltli&gtElemento A&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento B&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento C&lt/li&gt<br>
+                        &lt/ol&gt</td>
+      <td id="ejemplo"> <ol>
+                          <li>Elemento A</li>
+                          <li>Elemento B</li>
+                          <li>Elemento C</li>
+                        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltli&gt&lt/li&gt</td>
+      <td id="proposito">Funciona para crear elementos en una lista o menu.</td>
+      <td id="atributos">type: 1, A, a<br>
+                        value: número del item
+      </td>
+      <td id="sintaxis" align="left" style="border:1px solid black">&ltul&gt<br>                        
+                        &nbsp&nbsp&nbsp&ltli&gtElemento A&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento B&lt/li&gt<br>
+                        &nbsp&nbsp&nbsp&ltli&gtElemento C&lt/li&gt<br>
+                        &lt/ul&gt
+      <td id="ejemplo"> <ul>
+                          <li>Elemento A</li>
+                          <li>Elemento B</li>
+                          <li>Elemento C</li>
+                        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&lttable&gt&lt/table&gt</td>
+      <td id="proposito">Funciona para crear tablas.</td>
+      <td id="atributos">cellpadding: espacio entre la celda y el contenido<br>
+                        cellspacing: espacio entre celdas<br>
+                        border: 1, 0
+      </td>
+      <td id="sintaxis" align="left" rowspan="4" style="border:1px solid black">&lttable border="1"&gt<br>
+          &lttr&gt<br>
+            &nbsp&nbsp&nbsp&ltth colspan="2"&gtTitulo 1&lt/th&gt<br>
+            &nbsp&nbsp&nbsp&ltth colspan="2"&gtTitulo 2&lt/th&gt<br>
+            &nbsp&nbsp&nbsp&ltth colspan="2"&gtTitulo 3&lt/th&gt<br>
+          &lt/tr&gt<br>
+          &lttr&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 1&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 1.a&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 2&lt/td&gt<br>     
+            &nbsp&nbsp&nbsp&lttd&gtCelda 2.a&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 3&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 3.a&lt/td&gt<br>       
+          &lt/tr&gt<br>
+          &lttr&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 4&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 4.b&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 5&lt/td&gt<br>     
+            &nbsp&nbsp&nbsp&lttd&gtCelda 5.b&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 6&lt/td&gt<br>
+            &nbsp&nbsp&nbsp&lttd&gtCelda 6.b&lt/td&gt<br>       
+          &lt/tr&gt<br>
+        &lt/table&gt
+      </td>
+      <td id="ejemplo" rowspan="4">
+        <table border="1">
+          <tr>
+            <th colspan="2">Titulo 1</th>
+            <th colspan="2">Titulo 2</th>
+            <th colspan="2">Titulo 3</th>
+          </tr>
+          <tr>
+            <td>Celda 1</td>
+            <td>Celda 1.a</td>
+            <td>Celda 2</td>           
+            <td>Celda 2.a</td>
+            <td>Celda 3</td>  
+            <td>Celda 3.a</td>
+          </tr>
+          <tr>
+            <td>Celda 4</td>
+            <td>Celda 4.b</td>
+            <td>Celda 5</td>           
+            <td>Celda 5.b</td>
+            <td>Celda 6</td>  
+            <td>Celda 6.b</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltth&gt&lt/th&gt</td>
+      <td id="proposito">Etiqueta para el encabezado de cada columna.</td>
+      <td id="atributos" rowspan="3">align: left, right, center, justify, char<br>
+                         colspan: indica la cantidad de columnas que emergen.<br>
+                         rowspan: indica la cantidad de filas que emergen.<br>
+                         nowrap: el texto no continua en otro renglon<br>
+                         bgcolor: color del fondo de la celda.
+      </td>      
+    </tr>
+    <tr>
+      <td id="tags">&lttr&gt&lt/tr&gt</td>
+      <td id="proposito">Etiqueta para crear filas en una tabla.</td>
+    </tr>
+    <tr>
+      <td id="tags">&lttd&gt&lt/td&gt</td>
+      <td id="proposito">Etiqueta para crear columnas en una tabla.</td>
+    </tr>
+    <tr>
+      <td id="tags">&lttitle&gt&lt/title&gt</td>
+      <td id="proposito">Cambia el nombre que se muestra en la pestaña del navegador.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">&lttitle&gtSintaxis HTML5 y CSS3&lt/title&gt</td>
+      <td id="ejemplo"><i>Ver pestaña del navegador.</i></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltspan&gt&lt/span&gt</td>
+      <td id="proposito">Permite tener una sección del texto con un formato diferente.</td>
+      <td id="atributos">style: color, border</td>
+      <td id="sintaxis">&ltp&gtHello&ltspan style="color:red"&gtWorld&lt/span&gt!!!&ltp&gt</td>
+      <td id="ejemplo"><p>Hello <span style="color:red">World</span>!!!</p></td>
+    </tr>
+  </table>
+</div></a>
+
+<!--
+  ----------------------------------------------------------------------------------------------------------------*****
+  Tabla de HTML5 -------------------------------------------------------------------------------------------------*****
+  ----------------------------------------------------------------------------------------------------------------*****
+-->
+
+<a name="html5"><div>
+  <table id="tablaTrabajos" cellspacing="10">
+    <tr>
+      <th colspan="5"><div>HTML5</div></th>      
+    </tr>
+    <tr>
+      <th>Elemento</th>
+      <th>Propósito</th>
+      <th>Atributos</th>
+      <th>Sintaxis</th>
+      <th>Ejemplos</th>
+    </tr>
+    <tr>
+      <td id="tags">&ltarticle&gt&lt/article&gt</td>
+      <td id="proposito">
+        Permite crear un articulo, una sección o bloque independiente.
+      </td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">&ltarticle&gt<br>
+                        &nbsp&nbsp&nbsp&lth3&gtEjemplo de un articulo&lt/h3&gt<br>
+                        &nbsp&nbsp&nbsp&ltp&gtContinuación del ejemplo&lt/p&gt
+                        &lth/article&gt
+      </td>
+      <td id="ejemplo"><article><h3>Ejemplo de un articulo</h3><br>
+                                <p>Continuación del ejemplo</p>
+                        </article>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltaside&gt&lt/aside&gt</td>
+      <td id="proposito">Funciona para crear un bloque con información relacionada al tema de la página.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">&ltaside&gt Información relacionada aquí &lt/aside&gt</td>
+      <td id="ejemplo"><aside> Información relacionada aquí </aside></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltheader&gt&lt/header&gt</td>
+      <td id="proposito">Crea un encabezado para la página o una sección.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">
+        &ltheader style="color:white"&gtEncabezado de muestra, función de ejemplo.&lt/header&gt
+      </td>
+      <td id="ejemplo"><i>Ver encabezado de la página</i></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltfooter&gt&lt/footer&gt</td>
+      <td id="proposito">Funciona para generar el pie de página de la página web.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis">&ltfooter style="color:white"&gtPie de página, sección de ejemplo&lt/footer&gt
+      </td>
+      <td id="ejemplo"><i>Ver pie de ṕagina</i></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltnav&gt&lt/nav&gt</td>
+      <td id="proposito">Se utiliza para poner links de navegación, ya sea a otras páginas o dentro de la misma.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+      <td id="sintaxis" align="left">
+        &ltnav><br>
+                          &nbsp&nbsp&nbsp&ltul&gt<br>
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltli&gt&lta href="#estandar"&gtHTML Estándar&lt/a&gt&lt/li&gt<br>
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltli&gt&lta href="#html5"&gtHTML5&lt/a&gt&lt/li&gt<br>
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltli&gt&lta href="#">CSS3&lt/a&gt&lt/li&gt<br>
+                          &nbsp&nbsp&nbsp&lt/ul&gt<br>
+                        &lt/nav&gt
+      </td>
+      <td id="ejemplo"><nav>
+                          <ul>
+                              <li><a href="#estandar">HTML Estándar</a></li>
+                              <li><a href="#html5">HTML5</a></li>
+                              <li><a href="#">CSS3</a></li>
+                          </ul>
+                        </nav>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltsection&gt&lt/section&gt</td>
+      <td id="proposito">Se utiliza para definir una sección en la página o documento.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i>
+      </td>
+      <td id="sintaxis">&ltsection> Esta es una sección del documento&lt/section&gt</td>
+      <td id="ejemplo"><section>Esta es una sección del documento</section></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltmark&gt&lt/mark&gt</td>
+      <td id="proposito">Permite resaltar una parte del texto.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i>
+      </td>
+      <td id="sintaxis" align="left">
+          La palabra &ltmark>gato&lt/mark> está resaltada
+      </td>
+      <td id="ejemplo"> La palabra <mark>gato</mark> está resaltada </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltruby&gt&lt/ruby&gt</td>
+      <td id="proposito">Se utiliza para representar una anotación o guía de pronunciación para palabras.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i>
+      </td>
+      <td id="sintaxis" rowspan="2">
+        &ltruby><br>
+          &nbsp&nbsp&nbsp漢 &ltrp>(&lt/rp>&ltrt>Kan&lt/rt>&ltrp>)&lt/rp><br>
+          &nbsp&nbsp&nbsp字 &ltrp>(&lt/rp>&ltrt>ji&lt/rt>&ltrp>)&lt/rp><br>
+        &lt/ruby>
+      </td>
+      <td id="ejemplo" rowspan="2" style="font-size: 30px">
+        <ruby>
+          漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+          字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltrt&gt&lt/rt&gt</td>
+      <td id="proposito">Se utiliza en conjunto a la etiqueta &ltuby> para poner la pronunciación de algún caracter.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&lttime&gt&lt/time&gt</td>
+      <td id="proposito">Se utiliza para representar una hora o una fecha.</td>
+      <td id="atributos">datetime: Recibe la fecha que el elemento representa
+      </td>
+      <td id="sintaxis">Salió a correr a las &lttime>5:00am&lt/time></td>
+      <td id="ejemplo">Salió a correr a las <time>5:00am</time></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltmeter&gt&lt/meter&gt</td>
+      <td id="proposito">Se utiliza para representar una medida escalar de un rango conocido.</td>
+      <td id="atributos">value: valor a representar<br>
+                         min: valor minímo en el rango.<br>
+                         max: valor máximo en el rango.<br>
+                         low: establece el rango que es considerado bajo<br>
+                         high: establece el rango que es considerado alto<br>
+      </td> 
+      <td id="sintaxis">Espacio Utilizado: &ltmeter value="0.9" high="0.8" max="1">90%&lt/meter></td>
+      <td id="ejemplo">Espacio Utilizado: <meter value="0.9" high=0.8 max="1">90%</meter></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltdetails&gt&lt/details&gt</td>
+      <td id="proposito">Se utiliza como una forma de control donde el usuario puede obtener más información.</td>
+      <td id="atributos">open:indica si los valores estarán visibles o escondidos</td>
+      <td id="sintaxis" rowspan="2">
+        &ltdetails><br>
+          &nbsp&nbsp&nbsp&ltsummary>¿Que significa ITCR?&lt/summary><br>
+          &nbsp&nbsp&nbsp&ltp>Instituto Tecnológico de Costa Rica.&lt/p><br>
+        &lt/details>
+      </td>
+      <td id="ejemplo" rowspan="2">
+        <details>
+          <summary>¿Que significa ITCR?</summary>
+          <p>Instituto Tecnológico de Costa Rica.</p>
+        </details>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltsummary&gt&lt/summary&gt</td>
+      <td id="proposito">Se usa en conjunto a la etiqueta anterior para dar el resumen de la información.</td>
+      <td id="atributos"><i>Atributos generales de HTML</i></td>
+    </tr>
+    <tr>
+      <td id="tags">&ltaudio&gt&lt/audio&gt</td>
+      <td id="proposito">Reproduce un archivo de audio.</td>
+      <td id="atributos">
+        src: URL del archivo<br>
+        loop: indica si se reproducirá una y otra vez.<br>
+        control: indica si se mostrarán botones para controlar el audio
+      </td>
+      <td id="sintaxis">
+        &ltaudio controls="controls" src="audio1.mp3"><br>
+            &nbsp&nbsp&nbsp&ltpNo se puede reproducir el audio.
+        &lt/audio>
+      </td>
+      <td id="ejemplo">
+        <audio controls="controls" src="audio1.mp3">
+            No se puede reproducir el audio.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td id="tags">&ltcanvas&gt&lt/canvas&gt</td>
+      <td id="proposito">Permite crear una sección donde se pueden dibujar figuras gráficas.</td>
+      <td id="atributos">
+        width: ancho del lienzo
+        height: altura del lienzo
+      </td>
+      <td id="sintaxis">&ltcanvas width="100px" height="100px">&lt/canvas></td>
+      <td id="ejemplo"><canvas width="100px" height="100px"></canvas></td>
+    </tr>
+  </table>
+</div></a>
+
+<footer style="color:white">Pie de página, sección de ejemplo<br>
+  <a href="https://www.tutorialrepublic.com/html-reference/html5-global-attributes.php" style="color: white"> Lista de Atributos Generales en HTML </a>
+</footer>
+
+
+</body>
+</html>
+

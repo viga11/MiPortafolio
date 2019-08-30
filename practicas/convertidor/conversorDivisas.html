@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>conversorDivisas</title>
+		<link rel="stylesheet" type="text/css" href="conversorDivisas.css">
+		<script type="text/javascript" src="conversorDivisas.js"></script>
+	</head>
+
+	<body>
+		<center>
+			<div id = "divTitulo">
+				<h1>Convertidor de Divisas - Gabriel Vindas</h1>
+			</div>
+		</center>
+		<br>
+		<br>
+		<div id="mainContainer">
+		<table id="tablaDivisas">
+			<tr>
+				<td id="imagenPais"><img src="img/costaricaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/usaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/canadaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/mexicoFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/veneFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/ueFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/russiaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/southafricaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/coreaFlag.png" width="120px" height="120px"></td>
+				<td id="imagenPais"><img src="img/japanFlag.png" width="120px" height="120px"></td>
+			</tr>
+			<tr>
+				<td id="nombrePais">Costa Rica</td>
+				<td id="nombrePais">Estados Unidos</td>
+				<td id="nombrePais">Canadá</td>
+				<td id="nombrePais">Mexico</td>
+				<td id="nombrePais">Venezuela</td>				
+				<td id="nombrePais">Unión Europea</td>
+				<td id="nombrePais">Rusia</td>				
+				<td id="nombrePais">Sudafrica</td>
+				<td id="nombrePais">Corea</td>
+				<td id="nombrePais">Japón</td>
+			</tr>
+			<tr>
+				<td id="nombreMoneda">Colón</td>
+				<td id="nombreMoneda">Dolar</td>
+				<td id="nombreMoneda">Dólar Canadiense</td>
+				<td id="nombreMoneda">Peso Mexicano</td>
+				<td id="nombreMoneda">Bolívar</td>
+				<td id="nombreMoneda">Euro</td>
+				<td id="nombreMoneda">Rublo Ruso</td>
+				<td id="nombreMoneda">Rand</td>
+				<td id="nombreMoneda">Won</td>
+				<td id="nombreMoneda">Yen</td>
+			</tr>
+			<tr>
+				<td id="inicialesMoneda">CRC</td>
+				<td id="inicialesMoneda">USD</td>
+				<td id="inicialesMoneda">CAD</td>
+				<td id="inicialesMoneda">MXN</td>
+				<td id="inicialesMoneda">VEF</td>
+				<td id="inicialesMoneda">EUR</td>
+				<td id="inicialesMoneda">RUB</td>
+				<td id="inicialesMoneda">ZAR</td>
+				<td id="inicialesMoneda">KRW</td>
+				<td id="inicialesMoneda">JPY</td>
+			</tr>			
+			<tr id="checkRow">
+				<td><center><div id="checkPais" onclick="check('starCRC')">				
+					<img id="starCRC" src="img/starflat.png" width="40" height="40">				
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starUSD')">				
+					<img id="starUSD" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starCAD')">				
+					<img id="starCAD" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starMXN')">				
+					<img id="starMXN" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starVEF')">				
+					<img id="starVEF" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starEUR')">				
+					<img id="starEUR" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starRUB')">				
+					<img id="starRUB" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starZAR')">				
+					<img id="starZAR" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starKRW')">				
+					<img id="starKRW" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>
+				<td><center><div id="checkPais" onclick="check('starJPY')">				
+					<img id="starJPY" src="img/starflat.png" width="40" height="40">					
+				</div></center></td>										
+			</tr>
+			<tr id="inputCurrency">
+				<td id="inputCurrency"><input type="number" id="inputCRC" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputUSD" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputCAD" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputMXN" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputVEF" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputEUR" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputRUB" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputZAR" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputKRW" min=0></td>
+				<td id="inputCurrency"><input type="number" id="inputJPY" min=0></td>				
+			</tr>			
+		</table>
+		</div>
+		<br>
+		<div id="botones">
+			<div id ="buttonClear">			
+				<button name="clearButton" type="button"><img src="img/cancel1.png" width="60px" height="60px"onclick="clearInfo()"></button>
+			</div>
+			<div id ="buttonChangeCurrency">				
+				<button name="changeButton" type="button"><img src="img/change.png" width="60px" height="60px"onclick="exchangeCurrency()"></button>
+			</div>			
+		</div>
+		
+	</body>
+</html>
+
+
+
+

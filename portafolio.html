@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<style type="text/css">
+body{
+	background-image: url(backgrounds/fondo.jpg);
+    background-color: #5CDB95;
+}
+
+div{
+   text-align: center;
+   color: #EDF5E1;
+   /*border:1px solid black;*/
+   font-family: "PTSansNarrow";
+   /*font-weight: lighter;*/
+   margin:10px;
+}
+
+/*Tipos de letras*/
+@font-face{
+	font-family: "PTSansNarrow";
+	src: url("fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf");
+}
+@font-face{
+	font-family: "Roboto-Medium";
+	src: url("fonts/Roboto/Roboto-Medium.ttf");
+	}
+
+#titulo{
+    /*height:200px;*/
+    font-family: "Roboto-Medium";
+    font-size: 20px;
+    padding:60px;    
+    background-color:#05386B;
+    color:#EDF5E1;
+    padding: 1px;
+    margin: 1px;
+}
+
+#insideTitulo{
+	/*background-color:#05386B;*/
+	font-family: "PTSansNarrow";
+	color:#EDF5E1;
+    padding: 1px;
+    margin: 1px;
+}
+
+#infoTitulo{
+	background-color:#05386B;
+	font-family: "PTSansNarrow";
+    float: left;
+    width: 400px;
+    /*height: 75px;*/    
+}
+
+#infoPersonal{
+	background-color:#05386B;
+	font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
+}
+
+
+
+#foto{
+	background-color: #05386B;
+   float: right;
+   /*width: 219px;
+   height: 200px;*/
+   padding: 10px;
+   
+   /*height: 75px;*/
+   /*align ="center";*/
+}
+#menuNav{
+    
+}
+
+#infoFotoContainer{
+    /*margin-bottom:100px;*/
+    height:300px;
+    /*margin-bottom:20px;*/
+}
+
+#tablaTrabajos{
+  /*height:400px;*/
+  width: 100%;
+  /*border:1px solid black;*/
+  padding: 1px;
+  /*vertical-align: top;*/
+}
+
+#tableHeader{
+	font-size: 22px;
+	background-color:#05386B;
+}
+
+#tablaTrabajos{
+	/*background-color:#EC6576;*/
+}
+
+td{
+	background-color:#F5BE61;
+	color: black;
+}
+
+/*https://visme.co/blog/website-color-schemes/*/
+
+
+</style>
+
+<title>Mi Portafolio</title>
+
+</head>
+
+<body>
+<div id="titulo">
+    <h1>Mi Portafolio</h1>
+    <p id= "insideTitulo">
+    	Instituto Tecnológico de Costa Rica<br>
+    	Introducción al Desarollo de Páginas Web<br>
+    	Grupo 40
+    </p>
+</div>
+
+<div id="infoFotoContainer">
+    <div id="infoTitulo">
+        <h2>Información Personal</h2>
+         <p id="infoPersonal">Gabriel Vindas Brenes<br>
+            2014103931<br>            
+            Ingeniería en Computación<br>            
+            vindas1196@gmail.com<br>
+            86237319<br>
+         </p>
+    </div>
+    <div id="foto">        
+        <img  width=auto height="240px" src="backgrounds/miFoto.jpg" alt="Profile Picture">        
+    </div>
+</div>
+
+<div id="marginNav">
+  <table id="tablaTrabajos">
+    <tr>
+      <th id="tableHeader" colspan="2"><div>Prácticas</div></th>
+      <th id="tableHeader" colspan="2"><div>Tareas</div></th>
+      <th id="tableHeader" colspan="2"><div>Laboratorios</div></th>
+    </tr>
+    <tr>
+      <td>Semana 3: Sintaxis HTML5 y CSS3</td>      
+      <td><a href="practicas/sintaxis/practica1.html">GO</a></td>
+
+      <td>A01-¿Full or Specialist WebDev?</td>
+      <td><a href="tareas/A01-EnsayoFullStackDev_GabrielVindasBrenes.pdf">GO</a></td>
+
+      <td>Lab 1</td>
+      <td><a href ="">GO</a></td>
+    </tr>
+    <tr>
+      <td>Semana 5: Calendario</td>      
+      <td><a href="practicas/calendario/calendario.html">GO</a></td>
+      <td>A02-Internet Evolution Timeline</td>
+      <td><a href="tareas/A02-TimeLineInternetWEBAPP_GabrielVindasBrenes.pdf">GO</a></td>
+      <td>Lab 2</td>
+      <td><a href ="">GO</a></td>
+    </tr>
+    <tr>
+      <td>Semana 5: Convertidor de Divisas</td>      
+      <td><a href="practicas/convertidor/conversorDivisas.html">GO</a></td>
+      <td>Tarea 3</td>
+      <td><a href="">GO</a></td>
+      <td>Lab 3</td>
+      <td><a href ="">GO</a></td>
+    </tr>
+
+  </table>
+</div>
+
+</body>
+</html>
+
